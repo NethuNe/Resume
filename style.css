@@ -1,0 +1,247 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+    font-family: sans-serif;
+    padding-bottom: 2%;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    background-image: url("HeaderBackground.jpg");
+    background-position: 28% 30%;
+    height: 25%;
+    padding: 10px;
+    /* I pulled this with the below line, kept because I'm not sure what it does or if I'll need it for scaling.
+    -moz-box-shadow:     0 0 10px #000000;
+    -webkit-box-shadow:  0 0 10px #000000;
+    */
+    box-shadow:          0 0 10px rgba(0, 0, 0, .45);
+    position: relative;
+    z-index: 1;
+
+}
+
+/* My name; header. */
+h1 {
+    opacity: .95;
+    padding: 1.5%;
+    margin: 2%;
+    margin-top: -20px;
+    blur(1px);
+    color: #F5F5F5;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Generalized Headers */
+
+.genHead {
+    font-family: "Arial";
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.headerInject {
+    width: auto;
+    height: 70%;
+    border: 2px solid #F5F5F5;
+    margin-top: -1.5%;
+    position: relative;
+}
+
+/* Navigational Bar */
+
+ul {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll; /* In case you still use a flip phone to look at my site */
+    background-color: rgba(151, 196, 219, 0); /* Color preserved, but wholly opaque -- basically DNE */
+    z-index: 2;
+}
+
+/* Orientation of links in the nav bar */
+li.inLink {
+    float: left;
+    border-left: 1px solid #F5F5F5;
+}
+
+/* Meant for the social media images */
+li.outLink {
+    float: right;
+    border-right: 1px solid #F5F5F5;
+}
+
+/* For links formatting */
+li a {
+    display: block;
+    color: white;
+    background-color: rgba(151, 196, 219, .8);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    padding: 1vh 1.2vh;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover for in-links*/
+li.inLink a:hover {
+    background-color: #111;
+}
+
+/* Change the link color to white on hover for out-links*/
+li.outLink a:hover {
+    background-color: white;
+}
+
+/* Body */
+
+body {
+    background-color: #6b99ba;
+
+}
+
+main {
+    width: 72%;
+    margin-left: 14%;
+    background-color: #f3f2e0;
+    filter: saturate(.45);
+    height: 100%;
+    /*
+    -moz-box-shadow:     0 0 10px #000000;
+    -webkit-box-shadow:  0 0 10px #000000;
+    */
+    box-shadow:          0 0 15px #000000;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-evenly;
+    align-items: stretch;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    padding-top: 2vh;
+    margin: 0;
+}
+
+p.text {
+    display: block;
+    margin: 0;
+    align-self: center;
+    text-align: center;
+    flex-grow: 2;
+    font-size: 2.5vh;
+    padding: 1% 2% 2% 2%;
+    line-height: 1.5;
+    color: black;
+}
+
+.item {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: rgb(151, 196, 219);
+    overflow: hidden;
+}
+
+/* Contact Me! page contents */
+
+form {
+    display: block;
+
+}
+
+input[type=text] {
+    width: 60%;
+    margin-bottom: 2%;
+
+
+}
+
+input[type=email] {
+    width: 60%;
+    margin-bottom: 2%;
+}
+
+textarea[type=text] {
+    width: 60%;
+    margin-bottom: 2%;
+    padding-bottom: 8%;
+    resize: vertical;
+    flex-direction: column;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+input[type=submit] {
+    font-size: 1.5em;
+    padding: 3px 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #6b99ba;
+}
+
+input, textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    border: 2px solid lightgrey;
+    font-variant: small-caps;
+    padding: 1% 4%;
+}
+
+label {
+    display: block;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    text-align: left;
+    padding: 1%;
+}
+
+.form {
+    padding-top: 5%;
+    justify-content: center;
+    align-content: center;
+    width: 85%;
+    margin: auto;
+
+}
+
+/* Resume Page Contents */
+
+object {
+    margin: 0;
+    width: 100%;
+    height: 94vh;
+    position: relative;
+}
+
+/* Site Scaling */
+
+@media screen and (max-device-width: 600px) {
+    .headerInject {
+        visibility: hidden;
+    }
+}
+@media screen and (max-device-width: 400px) {
+    .genHead {
+        margin-top: 4%;
+    }
+}
+
+
