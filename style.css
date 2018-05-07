@@ -244,7 +244,7 @@ object {
     }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-device-width: 801px) {
 	main {
 		height: 100%;
 	}
