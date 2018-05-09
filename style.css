@@ -112,7 +112,6 @@ main {
     margin-left: 14%;
     background-color: #f3f2e0;
     filter: saturate(.45);
-
     /*
     -moz-box-shadow:     0 0 10px #000000;
     -webkit-box-shadow:  0 0 10px #000000;
@@ -219,6 +218,7 @@ label {
     align-content: center;
     width: 85%;
     margin: auto;
+    padding-bottom: 10%
 
 }
 
@@ -245,7 +245,9 @@ object {
 }
 
 @media screen and (min-device-width: 801px) {
-	main {
-		height: 100%;
-	}
+    main {
+        height: 100%;
+    }
 }
+
+
