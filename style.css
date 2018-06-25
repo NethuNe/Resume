@@ -62,7 +62,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: scroll; /* In case you still use a flip phone to look at my site */
     background-color: rgba(151, 196, 219, 0); /* Color preserved, but wholly opaque -- basically DNE */
     z-index: 2;
 }
